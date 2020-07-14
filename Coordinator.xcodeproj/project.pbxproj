@@ -7,23 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74BDC27324BE32E30016432D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC27224BE32E30016432D /* AppDelegate.swift */; };
-		74BDC27524BE32E30016432D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC27424BE32E30016432D /* SceneDelegate.swift */; };
-		74BDC27724BE32E30016432D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC27624BE32E30016432D /* ContentView.swift */; };
 		74BDC27924BE32E40016432D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC27824BE32E40016432D /* Assets.xcassets */; };
 		74BDC27C24BE32E40016432D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC27B24BE32E40016432D /* Preview Assets.xcassets */; };
 		74BDC27F24BE32E40016432D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC27D24BE32E40016432D /* LaunchScreen.storyboard */; };
+		74BDC28924BE330B0016432D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC28624BE330B0016432D /* AppDelegate.swift */; };
+		74BDC28A24BE330B0016432D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC28724BE330B0016432D /* TabBarView.swift */; };
+		74BDC28B24BE330B0016432D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC28824BE330B0016432D /* SceneDelegate.swift */; };
+		74BDC28D24BE33210016432D /* Customizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC28C24BE33210016432D /* Customizations.swift */; };
+		74BDC29324BE333D0016432D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC28F24BE333C0016432D /* Images.xcassets */; };
+		74BDC29424BE333D0016432D /* URL-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC29024BE333C0016432D /* URL-180.png */; };
+		74BDC29524BE333D0016432D /* URL-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC29124BE333D0016432D /* URL-40.png */; };
+		74BDC29624BE333D0016432D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC29224BE333D0016432D /* Colors.xcassets */; };
+		74BDC2A624BE33710016432D /* FIRSelectRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29824BE33700016432D /* FIRSelectRouteView.swift */; };
+		74BDC2A724BE33710016432D /* FIACoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29924BE33700016432D /* FIACoordinator.swift */; };
+		74BDC2A824BE33710016432D /* FIAFlightStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29A24BE33710016432D /* FIAFlightStatusView.swift */; };
+		74BDC2A924BE33710016432D /* FIRFlightStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29B24BE33710016432D /* FIRFlightStatusView.swift */; };
+		74BDC2AA24BE33710016432D /* FIRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29C24BE33710016432D /* FIRView.swift */; };
+		74BDC2AB24BE33710016432D /* FINFlightStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29D24BE33710016432D /* FINFlightStatusView.swift */; };
+		74BDC2AC24BE33710016432D /* FINCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29E24BE33710016432D /* FINCoordinator.swift */; };
+		74BDC2AD24BE33710016432D /* FINView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29F24BE33710016432D /* FINView.swift */; };
+		74BDC2AE24BE33710016432D /* FlightInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2A024BE33710016432D /* FlightInfoView.swift */; };
+		74BDC2AF24BE33710016432D /* FIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2A124BE33710016432D /* FIAView.swift */; };
+		74BDC2B024BE33710016432D /* FlightInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2A224BE33710016432D /* FlightInfoCoordinator.swift */; };
+		74BDC2B124BE33710016432D /* FIASelectAirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2A324BE33710016432D /* FIASelectAirportView.swift */; };
+		74BDC2B224BE33710016432D /* FIRCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2A424BE33710016432D /* FIRCoordinator.swift */; };
+		74BDC2B324BE33710016432D /* FINSelectFlightNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2A524BE33710016432D /* FINSelectFlightNumberView.swift */; };
+		74BDC2C724BE33EF0016432D /* RBSelectOutboundFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2B824BE33ED0016432D /* RBSelectOutboundFlightView.swift */; };
+		74BDC2C824BE33EF0016432D /* OWBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2B924BE33ED0016432D /* OWBView.swift */; };
+		74BDC2C924BE33EF0016432D /* RBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2BA24BE33ED0016432D /* RBView.swift */; };
+		74BDC2CA24BE33EF0016432D /* MultiCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2BB24BE33ED0016432D /* MultiCityView.swift */; };
+		74BDC2CB24BE33EF0016432D /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2BC24BE33ED0016432D /* BookingView.swift */; };
+		74BDC2CC24BE33EF0016432D /* RBPassengerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2BD24BE33ED0016432D /* RBPassengerDetailsView.swift */; };
+		74BDC2CD24BE33EF0016432D /* OWBSelectTravelDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2BE24BE33ED0016432D /* OWBSelectTravelDateView.swift */; };
+		74BDC2CE24BE33EF0016432D /* OWBSelectOriginDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2BF24BE33EE0016432D /* OWBSelectOriginDestinationView.swift */; };
+		74BDC2CF24BE33EF0016432D /* RBSelectExtraOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2C024BE33EE0016432D /* RBSelectExtraOptionsView.swift */; };
+		74BDC2D024BE33EF0016432D /* RBSelectOriginDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2C124BE33EE0016432D /* RBSelectOriginDestination.swift */; };
+		74BDC2D124BE33EF0016432D /* RBCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2C224BE33EE0016432D /* RBCoordinator.swift */; };
+		74BDC2D224BE33EF0016432D /* RBSelectTravelDatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2C324BE33EE0016432D /* RBSelectTravelDatesView.swift */; };
+		74BDC2D324BE33EF0016432D /* OWBCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2C424BE33EE0016432D /* OWBCoordinator.swift */; };
+		74BDC2D424BE33EF0016432D /* RBSelectInboundFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2C524BE33EE0016432D /* RBSelectInboundFlightView.swift */; };
+		74BDC2D524BE33EF0016432D /* BookingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2C624BE33EE0016432D /* BookingCoordinator.swift */; };
+		74BDC2DB24BE344D0016432D /* CoordinatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2DA24BE344D0016432D /* CoordinatorState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74BDC26F24BE32E30016432D /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		74BDC27224BE32E30016432D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74BDC27424BE32E30016432D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74BDC27624BE32E30016432D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74BDC27824BE32E40016432D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74BDC27B24BE32E40016432D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74BDC27E24BE32E40016432D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74BDC28024BE32E40016432D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74BDC28624BE330B0016432D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74BDC28724BE330B0016432D /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		74BDC28824BE330B0016432D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		74BDC28C24BE33210016432D /* Customizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customizations.swift; sourceTree = "<group>"; };
+		74BDC28F24BE333C0016432D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74BDC29024BE333C0016432D /* URL-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "URL-180.png"; sourceTree = "<group>"; };
+		74BDC29124BE333D0016432D /* URL-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "URL-40.png"; sourceTree = "<group>"; };
+		74BDC29224BE333D0016432D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		74BDC29824BE33700016432D /* FIRSelectRouteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRSelectRouteView.swift; sourceTree = "<group>"; };
+		74BDC29924BE33700016432D /* FIACoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIACoordinator.swift; sourceTree = "<group>"; };
+		74BDC29A24BE33710016432D /* FIAFlightStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIAFlightStatusView.swift; sourceTree = "<group>"; };
+		74BDC29B24BE33710016432D /* FIRFlightStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRFlightStatusView.swift; sourceTree = "<group>"; };
+		74BDC29C24BE33710016432D /* FIRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRView.swift; sourceTree = "<group>"; };
+		74BDC29D24BE33710016432D /* FINFlightStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FINFlightStatusView.swift; sourceTree = "<group>"; };
+		74BDC29E24BE33710016432D /* FINCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FINCoordinator.swift; sourceTree = "<group>"; };
+		74BDC29F24BE33710016432D /* FINView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FINView.swift; sourceTree = "<group>"; };
+		74BDC2A024BE33710016432D /* FlightInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInfoView.swift; sourceTree = "<group>"; };
+		74BDC2A124BE33710016432D /* FIAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIAView.swift; sourceTree = "<group>"; };
+		74BDC2A224BE33710016432D /* FlightInfoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInfoCoordinator.swift; sourceTree = "<group>"; };
+		74BDC2A324BE33710016432D /* FIASelectAirportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIASelectAirportView.swift; sourceTree = "<group>"; };
+		74BDC2A424BE33710016432D /* FIRCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRCoordinator.swift; sourceTree = "<group>"; };
+		74BDC2A524BE33710016432D /* FINSelectFlightNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FINSelectFlightNumberView.swift; sourceTree = "<group>"; };
+		74BDC2B824BE33ED0016432D /* RBSelectOutboundFlightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBSelectOutboundFlightView.swift; sourceTree = "<group>"; };
+		74BDC2B924BE33ED0016432D /* OWBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWBView.swift; sourceTree = "<group>"; };
+		74BDC2BA24BE33ED0016432D /* RBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBView.swift; sourceTree = "<group>"; };
+		74BDC2BB24BE33ED0016432D /* MultiCityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiCityView.swift; sourceTree = "<group>"; };
+		74BDC2BC24BE33ED0016432D /* BookingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		74BDC2BD24BE33ED0016432D /* RBPassengerDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBPassengerDetailsView.swift; sourceTree = "<group>"; };
+		74BDC2BE24BE33ED0016432D /* OWBSelectTravelDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWBSelectTravelDateView.swift; sourceTree = "<group>"; };
+		74BDC2BF24BE33EE0016432D /* OWBSelectOriginDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWBSelectOriginDestinationView.swift; sourceTree = "<group>"; };
+		74BDC2C024BE33EE0016432D /* RBSelectExtraOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBSelectExtraOptionsView.swift; sourceTree = "<group>"; };
+		74BDC2C124BE33EE0016432D /* RBSelectOriginDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBSelectOriginDestination.swift; sourceTree = "<group>"; };
+		74BDC2C224BE33EE0016432D /* RBCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBCoordinator.swift; sourceTree = "<group>"; };
+		74BDC2C324BE33EE0016432D /* RBSelectTravelDatesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBSelectTravelDatesView.swift; sourceTree = "<group>"; };
+		74BDC2C424BE33EE0016432D /* OWBCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWBCoordinator.swift; sourceTree = "<group>"; };
+		74BDC2C524BE33EE0016432D /* RBSelectInboundFlightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBSelectInboundFlightView.swift; sourceTree = "<group>"; };
+		74BDC2C624BE33EE0016432D /* BookingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCoordinator.swift; sourceTree = "<group>"; };
+		74BDC2DA24BE344D0016432D /* CoordinatorState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +126,14 @@
 		74BDC27124BE32E30016432D /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				74BDC27224BE32E30016432D /* AppDelegate.swift */,
-				74BDC27424BE32E30016432D /* SceneDelegate.swift */,
-				74BDC27624BE32E30016432D /* ContentView.swift */,
+				74BDC28624BE330B0016432D /* AppDelegate.swift */,
+				74BDC28824BE330B0016432D /* SceneDelegate.swift */,
+				74BDC28724BE330B0016432D /* TabBarView.swift */,
+				74BDC2DA24BE344D0016432D /* CoordinatorState.swift */,
+				74BDC29724BE33480016432D /* Resources */,
+				74BDC28E24BE332D0016432D /* Utilities */,
+				74BDC2D924BE34220016432D /* Booking */,
+				74BDC2B724BE33C20016432D /* FlightInfoViews */,
 				74BDC27824BE32E40016432D /* Assets.xcassets */,
 				74BDC27D24BE32E40016432D /* LaunchScreen.storyboard */,
 				74BDC28024BE32E40016432D /* Info.plist */,
@@ -73,6 +148,116 @@
 				74BDC27B24BE32E40016432D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74BDC28E24BE332D0016432D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC28C24BE33210016432D /* Customizations.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		74BDC29724BE33480016432D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC29224BE333D0016432D /* Colors.xcassets */,
+				74BDC28F24BE333C0016432D /* Images.xcassets */,
+				74BDC29124BE333D0016432D /* URL-40.png */,
+				74BDC29024BE333C0016432D /* URL-180.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74BDC2B424BE337A0016432D /* FlightStatusByAirport */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC29924BE33700016432D /* FIACoordinator.swift */,
+				74BDC29A24BE33710016432D /* FIAFlightStatusView.swift */,
+				74BDC2A324BE33710016432D /* FIASelectAirportView.swift */,
+				74BDC2A124BE33710016432D /* FIAView.swift */,
+			);
+			path = FlightStatusByAirport;
+			sourceTree = "<group>";
+		};
+		74BDC2B524BE339C0016432D /* FlightStatusByNumber */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC29E24BE33710016432D /* FINCoordinator.swift */,
+				74BDC29D24BE33710016432D /* FINFlightStatusView.swift */,
+				74BDC2A524BE33710016432D /* FINSelectFlightNumberView.swift */,
+				74BDC29F24BE33710016432D /* FINView.swift */,
+			);
+			path = FlightStatusByNumber;
+			sourceTree = "<group>";
+		};
+		74BDC2B624BE33AC0016432D /* FlightStatusByRoute */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2A424BE33710016432D /* FIRCoordinator.swift */,
+				74BDC29B24BE33710016432D /* FIRFlightStatusView.swift */,
+				74BDC29824BE33700016432D /* FIRSelectRouteView.swift */,
+				74BDC29C24BE33710016432D /* FIRView.swift */,
+			);
+			path = FlightStatusByRoute;
+			sourceTree = "<group>";
+		};
+		74BDC2B724BE33C20016432D /* FlightInfoViews */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2B424BE337A0016432D /* FlightStatusByAirport */,
+				74BDC2B524BE339C0016432D /* FlightStatusByNumber */,
+				74BDC2B624BE33AC0016432D /* FlightStatusByRoute */,
+				74BDC2A224BE33710016432D /* FlightInfoCoordinator.swift */,
+				74BDC2A024BE33710016432D /* FlightInfoView.swift */,
+			);
+			path = FlightInfoViews;
+			sourceTree = "<group>";
+		};
+		74BDC2D624BE33F70016432D /* OneWay */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2C424BE33EE0016432D /* OWBCoordinator.swift */,
+				74BDC2BF24BE33EE0016432D /* OWBSelectOriginDestinationView.swift */,
+				74BDC2BE24BE33ED0016432D /* OWBSelectTravelDateView.swift */,
+				74BDC2B924BE33ED0016432D /* OWBView.swift */,
+			);
+			path = OneWay;
+			sourceTree = "<group>";
+		};
+		74BDC2D724BE34060016432D /* Return */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2C224BE33EE0016432D /* RBCoordinator.swift */,
+				74BDC2BD24BE33ED0016432D /* RBPassengerDetailsView.swift */,
+				74BDC2C024BE33EE0016432D /* RBSelectExtraOptionsView.swift */,
+				74BDC2C524BE33EE0016432D /* RBSelectInboundFlightView.swift */,
+				74BDC2C124BE33EE0016432D /* RBSelectOriginDestination.swift */,
+				74BDC2B824BE33ED0016432D /* RBSelectOutboundFlightView.swift */,
+				74BDC2C324BE33EE0016432D /* RBSelectTravelDatesView.swift */,
+				74BDC2BA24BE33ED0016432D /* RBView.swift */,
+			);
+			path = Return;
+			sourceTree = "<group>";
+		};
+		74BDC2D824BE34120016432D /* MultiCity */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2BB24BE33ED0016432D /* MultiCityView.swift */,
+			);
+			path = MultiCity;
+			sourceTree = "<group>";
+		};
+		74BDC2D924BE34220016432D /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2C624BE33EE0016432D /* BookingCoordinator.swift */,
+				74BDC2BC24BE33ED0016432D /* BookingView.swift */,
+				74BDC2D824BE34120016432D /* MultiCity */,
+				74BDC2D624BE33F70016432D /* OneWay */,
+				74BDC2D724BE34060016432D /* Return */,
+			);
+			path = Booking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				74BDC27F24BE32E40016432D /* LaunchScreen.storyboard in Resources */,
+				74BDC29324BE333D0016432D /* Images.xcassets in Resources */,
+				74BDC29424BE333D0016432D /* URL-180.png in Resources */,
+				74BDC29524BE333D0016432D /* URL-40.png in Resources */,
 				74BDC27C24BE32E40016432D /* Preview Assets.xcassets in Resources */,
 				74BDC27924BE32E40016432D /* Assets.xcassets in Resources */,
+				74BDC29624BE333D0016432D /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +334,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74BDC27324BE32E30016432D /* AppDelegate.swift in Sources */,
-				74BDC27524BE32E30016432D /* SceneDelegate.swift in Sources */,
-				74BDC27724BE32E30016432D /* ContentView.swift in Sources */,
+				74BDC2C724BE33EF0016432D /* RBSelectOutboundFlightView.swift in Sources */,
+				74BDC2CA24BE33EF0016432D /* MultiCityView.swift in Sources */,
+				74BDC2AD24BE33710016432D /* FINView.swift in Sources */,
+				74BDC2B124BE33710016432D /* FIASelectAirportView.swift in Sources */,
+				74BDC2D524BE33EF0016432D /* BookingCoordinator.swift in Sources */,
+				74BDC2D224BE33EF0016432D /* RBSelectTravelDatesView.swift in Sources */,
+				74BDC2CC24BE33EF0016432D /* RBPassengerDetailsView.swift in Sources */,
+				74BDC2CB24BE33EF0016432D /* BookingView.swift in Sources */,
+				74BDC2C924BE33EF0016432D /* RBView.swift in Sources */,
+				74BDC2AF24BE33710016432D /* FIAView.swift in Sources */,
+				74BDC2CE24BE33EF0016432D /* OWBSelectOriginDestinationView.swift in Sources */,
+				74BDC2B324BE33710016432D /* FINSelectFlightNumberView.swift in Sources */,
+				74BDC28924BE330B0016432D /* AppDelegate.swift in Sources */,
+				74BDC2D324BE33EF0016432D /* OWBCoordinator.swift in Sources */,
+				74BDC2AA24BE33710016432D /* FIRView.swift in Sources */,
+				74BDC28A24BE330B0016432D /* TabBarView.swift in Sources */,
+				74BDC2D124BE33EF0016432D /* RBCoordinator.swift in Sources */,
+				74BDC2A924BE33710016432D /* FIRFlightStatusView.swift in Sources */,
+				74BDC2B224BE33710016432D /* FIRCoordinator.swift in Sources */,
+				74BDC2AE24BE33710016432D /* FlightInfoView.swift in Sources */,
+				74BDC2AC24BE33710016432D /* FINCoordinator.swift in Sources */,
+				74BDC2A624BE33710016432D /* FIRSelectRouteView.swift in Sources */,
+				74BDC28B24BE330B0016432D /* SceneDelegate.swift in Sources */,
+				74BDC2D424BE33EF0016432D /* RBSelectInboundFlightView.swift in Sources */,
+				74BDC28D24BE33210016432D /* Customizations.swift in Sources */,
+				74BDC2D024BE33EF0016432D /* RBSelectOriginDestination.swift in Sources */,
+				74BDC2DB24BE344D0016432D /* CoordinatorState.swift in Sources */,
+				74BDC2C824BE33EF0016432D /* OWBView.swift in Sources */,
+				74BDC2A824BE33710016432D /* FIAFlightStatusView.swift in Sources */,
+				74BDC2CD24BE33EF0016432D /* OWBSelectTravelDateView.swift in Sources */,
+				74BDC2AB24BE33710016432D /* FINFlightStatusView.swift in Sources */,
+				74BDC2B024BE33710016432D /* FlightInfoCoordinator.swift in Sources */,
+				74BDC2CF24BE33EF0016432D /* RBSelectExtraOptionsView.swift in Sources */,
+				74BDC2A724BE33710016432D /* FIACoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
