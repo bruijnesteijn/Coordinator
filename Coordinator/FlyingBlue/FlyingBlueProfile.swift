@@ -1,23 +1,23 @@
 //
-//  PreviousTripsView.swift
+//  FlyingBlueProfile.swift
 //  Coordinator
 //
-//  Created by Bart Bruijnesteijn on 14/07/2020.
+//  Created by Bart Bruijnesteijn on 31/07/2020.
 //
 
 import SwiftUI
 
-struct PreviousTripsView: View {
+struct FlyingBlueProfile: View {
     @EnvironmentObject var coordinatorState: CoordinatorState
     
     var body: some View {
         NavigationView {
             VStack {
-                TripsView(tab: "PreviousTrips")
-                
+                FlyingBlueView()
+
                 Spacer()
                 
-                Text("Overview previous trips")
+                Text("Overview Flying Blue membership, tier level, miles")
                     .frame(width: 300, height: 150)
                     .background(Color.rectangleAccentColor)
                     .multilineTextAlignment(.center)
@@ -25,17 +25,19 @@ struct PreviousTripsView: View {
                     .font(.subheadline)
                     .foregroundColor(.labelFontColor)
                     .padding()
+
+                Spacer()
             }
-            
-            .navigationBarTitle("My Trips")
+                
+            .navigationBarTitle("Flying Blue")
         }
     }
 }
 
 #if DEBUG
-struct PreviousTripsView_Previews: PreviewProvider {
+struct FlyingBlueProfile_Previews: PreviewProvider {
     static var previews: some View {
-        PreviousTripsView().environmentObject(CoordinatorState(flow: "", page: "", back: ""))
+        FlyingBlueProfile().environmentObject(CoordinatorState(flow: "", page: "", back: ""))
     }
 }
 #endif

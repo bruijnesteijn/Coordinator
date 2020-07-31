@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		746EB05724D2A4D000F7E090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EB05524D2A4CF00F7E090 /* AppDelegate.swift */; };
-		746EB05824D2A4D000F7E090 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EB05624D2A4CF00F7E090 /* SceneDelegate.swift */; };
+		7428BD3724D45C33005E135B /* FlyingBlueProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428BD3624D45C33005E135B /* FlyingBlueProfile.swift */; };
+		7428BD3924D45E23005E135B /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428BD3824D45E23005E135B /* ContactUsView.swift */; };
+		746EB05D24D421BB00F7E090 /* FlyingBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EB05C24D421BB00F7E090 /* FlyingBlueView.swift */; };
+		746EB06024D4220100F7E090 /* FlyingBlueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EB05F24D4220100F7E090 /* FlyingBlueCoordinator.swift */; };
+		746EB06224D4228D00F7E090 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EB06124D4228D00F7E090 /* ContactView.swift */; };
+		746EB06424D422A400F7E090 /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EB06324D422A400F7E090 /* ContactCoordinator.swift */; };
 		74BDC27C24BE32E40016432D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC27B24BE32E40016432D /* Preview Assets.xcassets */; };
 		74BDC27F24BE32E40016432D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC27D24BE32E40016432D /* LaunchScreen.storyboard */; };
 		74BDC28A24BE330B0016432D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC28724BE330B0016432D /* TabBarView.swift */; };
@@ -55,8 +59,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		746EB05524D2A4CF00F7E090 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		746EB05624D2A4CF00F7E090 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7428BD3624D45C33005E135B /* FlyingBlueProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingBlueProfile.swift; sourceTree = "<group>"; };
+		7428BD3824D45E23005E135B /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
+		746EB05C24D421BB00F7E090 /* FlyingBlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingBlueView.swift; sourceTree = "<group>"; };
+		746EB05F24D4220100F7E090 /* FlyingBlueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingBlueCoordinator.swift; sourceTree = "<group>"; };
+		746EB06124D4228D00F7E090 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		746EB06324D422A400F7E090 /* ContactCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCoordinator.swift; sourceTree = "<group>"; };
 		74BDC26F24BE32E30016432D /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BDC27B24BE32E40016432D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74BDC27E24BE32E40016432D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,6 +123,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7428BD3424D45A3D005E135B /* PreviousTrips */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2F624BE442B0016432D /* PreviousTripsView.swift */,
+			);
+			path = PreviousTrips;
+			sourceTree = "<group>";
+		};
+		7428BD3524D45A49005E135B /* UpcomingTrips */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2F424BE441F0016432D /* UpcomingTripsView.swift */,
+			);
+			path = UpcomingTrips;
+			sourceTree = "<group>";
+		};
+		746EB05B24D4201C00F7E090 /* NextTrip */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2E124BE370F0016432D /* NextTripView.swift */,
+			);
+			path = NextTrip;
+			sourceTree = "<group>";
+		};
+		746EB05E24D421C600F7E090 /* FlyingBlue */ = {
+			isa = PBXGroup;
+			children = (
+				746EB05C24D421BB00F7E090 /* FlyingBlueView.swift */,
+				746EB05F24D4220100F7E090 /* FlyingBlueCoordinator.swift */,
+				7428BD3624D45C33005E135B /* FlyingBlueProfile.swift */,
+			);
+			path = FlyingBlue;
+			sourceTree = "<group>";
+		};
+		746EB06524D422AA00F7E090 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				746EB06124D4228D00F7E090 /* ContactView.swift */,
+				746EB06324D422A400F7E090 /* ContactCoordinator.swift */,
+				7428BD3824D45E23005E135B /* ContactUsView.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
 		74BDC26624BE32E30016432D = {
 			isa = PBXGroup;
 			children = (
@@ -134,9 +186,9 @@
 		74BDC27124BE32E30016432D /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				746EB05524D2A4CF00F7E090 /* AppDelegate.swift */,
-				746EB05624D2A4CF00F7E090 /* SceneDelegate.swift */,
 				74BDC28724BE330B0016432D /* TabBarView.swift */,
+				746EB06524D422AA00F7E090 /* Contact */,
+				746EB05E24D421C600F7E090 /* FlyingBlue */,
 				74BDC2E024BE36D20016432D /* Trips */,
 				74BDC2DA24BE344D0016432D /* CoordinatorState.swift */,
 				74BDC28E24BE332D0016432D /* Utilities */,
@@ -262,9 +314,9 @@
 			children = (
 				74BDC2DE24BE35E70016432D /* TripsCoordinator.swift */,
 				74BDC2DC24BE35B50016432D /* TripsView.swift */,
-				74BDC2E124BE370F0016432D /* NextTripView.swift */,
-				74BDC2F424BE441F0016432D /* UpcomingTripsView.swift */,
-				74BDC2F624BE442B0016432D /* PreviousTripsView.swift */,
+				7428BD3524D45A49005E135B /* UpcomingTrips */,
+				7428BD3424D45A3D005E135B /* PreviousTrips */,
+				746EB05B24D4201C00F7E090 /* NextTrip */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -356,27 +408,31 @@
 				74BDC2DD24BE35B50016432D /* TripsView.swift in Sources */,
 				74BDC2F524BE441F0016432D /* UpcomingTripsView.swift in Sources */,
 				74BDC2C724BE33EF0016432D /* RBSelectOutboundFlightView.swift in Sources */,
+				746EB06224D4228D00F7E090 /* ContactView.swift in Sources */,
 				74BDC2CA24BE33EF0016432D /* MultiCityView.swift in Sources */,
 				74BDC2AD24BE33710016432D /* FINView.swift in Sources */,
 				74BDC2B124BE33710016432D /* FIASelectAirportView.swift in Sources */,
 				74BDC2D524BE33EF0016432D /* BookingCoordinator.swift in Sources */,
 				74BDC2D224BE33EF0016432D /* RBSelectTravelDatesView.swift in Sources */,
+				7428BD3924D45E23005E135B /* ContactUsView.swift in Sources */,
 				74BDC2E224BE370F0016432D /* NextTripView.swift in Sources */,
 				74BDC2F724BE442B0016432D /* PreviousTripsView.swift in Sources */,
 				74BDC2CC24BE33EF0016432D /* RBPassengerDetailsView.swift in Sources */,
 				74BDC2CB24BE33EF0016432D /* BookingView.swift in Sources */,
 				74BDC2C924BE33EF0016432D /* RBView.swift in Sources */,
+				746EB06424D422A400F7E090 /* ContactCoordinator.swift in Sources */,
 				74BDC2AF24BE33710016432D /* FIAView.swift in Sources */,
 				74BDC2CE24BE33EF0016432D /* OWBSelectOriginDestinationView.swift in Sources */,
-				746EB05824D2A4D000F7E090 /* SceneDelegate.swift in Sources */,
 				74BDC2B324BE33710016432D /* FINSelectFlightNumberView.swift in Sources */,
+				7428BD3724D45C33005E135B /* FlyingBlueProfile.swift in Sources */,
 				74BDC2D324BE33EF0016432D /* OWBCoordinator.swift in Sources */,
+				746EB05D24D421BB00F7E090 /* FlyingBlueView.swift in Sources */,
 				74BDC2AA24BE33710016432D /* FIRView.swift in Sources */,
 				74BDC28A24BE330B0016432D /* TabBarView.swift in Sources */,
 				74BDC2D124BE33EF0016432D /* RBCoordinator.swift in Sources */,
 				74BDC2A924BE33710016432D /* FIRFlightStatusView.swift in Sources */,
-				746EB05724D2A4D000F7E090 /* AppDelegate.swift in Sources */,
 				74BDC2B224BE33710016432D /* FIRCoordinator.swift in Sources */,
+				746EB06024D4220100F7E090 /* FlyingBlueCoordinator.swift in Sources */,
 				74BDC2AE24BE33710016432D /* FlightInfoView.swift in Sources */,
 				74BDC2AC24BE33710016432D /* FINCoordinator.swift in Sources */,
 				74BDC2A624BE33710016432D /* FIRSelectRouteView.swift in Sources */,

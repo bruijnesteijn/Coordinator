@@ -15,15 +15,34 @@ struct BookingCoordinator: View {
         VStack {
             flow(coordinatorState: self.coordinatorState)
         }
+        
+        .onOpenURL { url in
+            coordinatorState.flow = url.bookTab
+        }
     }
 }
 
 private func flow(coordinatorState: CoordinatorState) -> AnyView {
     switch coordinatorState.flow {
-        case "ReturnBooking": return AnyView(RBView())
-        case "OneWayBooking": return AnyView(OWBView())
-        case "MultiCityBooking": return AnyView(MCBView())
-        default: return AnyView(RBView())
+    case "ReturnBooking": return AnyView(RBView())
+    case "OneWayBooking": return AnyView(OWBView())
+    case "MultiCityBooking": return AnyView(MCBView())
+    default: return AnyView(RBView())
+    }
+}
+
+extension URL {
+    var bookTab: String {
+        guard pathComponents.count > 1 else {
+            return ""
+        }
+        
+        switch pathComponents[1] {
+        case "returnBooking": return "ReturnBooking"
+        case "oneWayBooking": return "OneWayBooking"
+        case "multiCityBooking": return "MultiCityBooking"
+        default: return "ReturnBooking"
+        }
     }
 }
 

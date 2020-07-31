@@ -1,5 +1,5 @@
 //
-//  UpcomingTripsView.swift
+//  NextTripView.swift
 //  Coordinator
 //
 //  Created by Bart Bruijnesteijn on 14/07/2020.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct UpcomingTripsView: View {
+struct NextTripView: View {
     @EnvironmentObject var coordinatorState: CoordinatorState
     
     var body: some View {
         NavigationView {
             VStack {
-                TripsView(tab: "UpcomingTrips")
+                TripsView(tab: "NextTrip")
                 
                 Spacer()
                 
-                Text("Overview upcoming trips")
+                Text("Overview next trips")
                     .frame(width: 300, height: 150)
                     .background(Color.rectangleAccentColor)
                     .multilineTextAlignment(.center)
@@ -25,17 +25,18 @@ struct UpcomingTripsView: View {
                     .font(.subheadline)
                     .foregroundColor(.labelFontColor)
                     .padding()
-           }
-            
-            .navigationBarTitle("My Trips")
+
+                Spacer()            }
+                
+            .navigationBarTitle("My Trip")
         }
     }
 }
 
 #if DEBUG
-struct UpcomingTripsView_Previews: PreviewProvider {
+struct NextTripView_Previews: PreviewProvider {
     static var previews: some View {
-        UpcomingTripsView().environmentObject(CoordinatorState(flow: "", page: "", back: ""))
+        NextTripView().environmentObject(CoordinatorState(flow: "NextTrip", page: "", back: ""))
     }
 }
 #endif

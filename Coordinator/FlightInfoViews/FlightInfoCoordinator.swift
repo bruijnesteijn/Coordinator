@@ -15,6 +15,10 @@ struct FlightInfoCoordinator: View {
         VStack {
             flow(coordinatorState: self.coordinatorState)
         }
+        
+        .onOpenURL { url in
+            coordinatorState.flow = url.flightInfoTab
+        }
     }
 }
 
@@ -24,6 +28,21 @@ private func flow(coordinatorState: CoordinatorState) -> AnyView {
         case "ByRoute": return AnyView(FIRView())
         case "ByAirport": return AnyView(FIAView())
         default: return AnyView(FINView())
+    }
+}
+
+extension URL {
+    var flightInfoTab: String {
+        guard pathComponents.count > 1 else {
+            return ""
+        }
+        
+        switch pathComponents[1] {
+        case "byFlightNumber": return "ByFlightNumber"
+        case "byRoute": return "ByRoute"
+        case "byAirport": return "ByAirport"
+        default: return "ByFlightNumber"
+        }
     }
 }
 

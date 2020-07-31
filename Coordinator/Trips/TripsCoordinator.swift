@@ -15,6 +15,10 @@ struct TripsCoordinator: View {
         VStack {
             flow(coordinatorState: self.coordinatorState)
         }
+        
+        .onOpenURL { url in
+            coordinatorState.flow = url.tripsTab
+        }
     }
 }
 
@@ -24,6 +28,21 @@ private func flow(coordinatorState: CoordinatorState) -> AnyView {
         case "UpcomingTrips": return AnyView(UpcomingTripsView())
         case "PreviousTrips": return AnyView(PreviousTripsView())
         default: return AnyView(NextTripView())
+    }
+}
+
+extension URL {
+    var tripsTab: String {
+        guard pathComponents.count > 1 else {
+            return ""
+        }
+        
+        switch pathComponents[1] {
+        case "nextTrip": return "NextTrip"
+        case "upcomingTrips": return "UpcomingTrips"
+        case "previousTrips": return "PreviousTrips"
+        default: return "NextTrip"
+        }
     }
 }
 

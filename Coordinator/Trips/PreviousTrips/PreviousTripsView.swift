@@ -1,25 +1,23 @@
 //
-//  MCBView.swift
-//  Router
+//  PreviousTripsView.swift
+//  Coordinator
 //
-//  Created by Bart Bruijnesteijn on 06/04/2020.
-//  Copyright © 2020 Bart Bruijnesteijn. All rights reserved.
+//  Created by Bart Bruijnesteijn on 14/07/2020.
 //
 
 import SwiftUI
 
-struct MCBView: View {
+struct PreviousTripsView: View {
     @EnvironmentObject var coordinatorState: CoordinatorState
     
     var body: some View {
         NavigationView {
             VStack {
-                BookingView(tab: "MultiCityBooking")
-
-                Spacer()
+                TripsView(tab: "PreviousTrips")
+                
                 Spacer()
                 
-                Text("Create multi-city booking")
+                Text("Overview previous trips")
                     .frame(width: 300, height: 150)
                     .background(Color.rectangleAccentColor)
                     .multilineTextAlignment(.center)
@@ -30,15 +28,15 @@ struct MCBView: View {
 
                 Spacer()            }
                 
-            .navigationBarTitle("Book a trip")
+            .navigationBarTitle("My Trip")
         }
     }
 }
 
 #if DEBUG
-struct MCBView_Previews: PreviewProvider {
+struct PreviousTripsView_Previews: PreviewProvider {
     static var previews: some View {
-        MCBView().environmentObject(CoordinatorState(flow: "MultiCityBooking", page: "", back: ""))
+        PreviousTripsView().environmentObject(CoordinatorState(flow: "PreviousTrips", page: "", back: ""))
     }
 }
 #endif
