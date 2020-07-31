@@ -15,7 +15,7 @@ struct RBSelectInboundFlightView: View {
         VStack {
             
             Text("Select inbound flight")
-                .frame(width: 300, height: 300)
+                .frame(width: 300, height: 150)
                 .background(Color.rectangleAccentColor)
                 .multilineTextAlignment(.center)
                 .lineSpacing(10)

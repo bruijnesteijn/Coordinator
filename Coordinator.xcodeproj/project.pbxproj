@@ -7,17 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74BDC27924BE32E40016432D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC27824BE32E40016432D /* Assets.xcassets */; };
+		746EB05724D2A4D000F7E090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EB05524D2A4CF00F7E090 /* AppDelegate.swift */; };
+		746EB05824D2A4D000F7E090 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EB05624D2A4CF00F7E090 /* SceneDelegate.swift */; };
 		74BDC27C24BE32E40016432D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC27B24BE32E40016432D /* Preview Assets.xcassets */; };
 		74BDC27F24BE32E40016432D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC27D24BE32E40016432D /* LaunchScreen.storyboard */; };
-		74BDC28924BE330B0016432D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC28624BE330B0016432D /* AppDelegate.swift */; };
 		74BDC28A24BE330B0016432D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC28724BE330B0016432D /* TabBarView.swift */; };
-		74BDC28B24BE330B0016432D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC28824BE330B0016432D /* SceneDelegate.swift */; };
 		74BDC28D24BE33210016432D /* Customizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC28C24BE33210016432D /* Customizations.swift */; };
-		74BDC29324BE333D0016432D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC28F24BE333C0016432D /* Images.xcassets */; };
-		74BDC29424BE333D0016432D /* URL-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC29024BE333C0016432D /* URL-180.png */; };
-		74BDC29524BE333D0016432D /* URL-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC29124BE333D0016432D /* URL-40.png */; };
-		74BDC29624BE333D0016432D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC29224BE333D0016432D /* Colors.xcassets */; };
 		74BDC2A624BE33710016432D /* FIRSelectRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29824BE33700016432D /* FIRSelectRouteView.swift */; };
 		74BDC2A724BE33710016432D /* FIACoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29924BE33700016432D /* FIACoordinator.swift */; };
 		74BDC2A824BE33710016432D /* FIAFlightStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC29A24BE33710016432D /* FIAFlightStatusView.swift */; };
@@ -48,22 +43,26 @@
 		74BDC2D424BE33EF0016432D /* RBSelectInboundFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2C524BE33EE0016432D /* RBSelectInboundFlightView.swift */; };
 		74BDC2D524BE33EF0016432D /* BookingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2C624BE33EE0016432D /* BookingCoordinator.swift */; };
 		74BDC2DB24BE344D0016432D /* CoordinatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2DA24BE344D0016432D /* CoordinatorState.swift */; };
+		74BDC2DD24BE35B50016432D /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2DC24BE35B50016432D /* TripsView.swift */; };
+		74BDC2DF24BE35E70016432D /* TripsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2DE24BE35E70016432D /* TripsCoordinator.swift */; };
+		74BDC2E224BE370F0016432D /* NextTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2E124BE370F0016432D /* NextTripView.swift */; };
+		74BDC2EC24BE38690016432D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC2EB24BE38690016432D /* Colors.xcassets */; };
+		74BDC2EE24BE38740016432D /* Application.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC2ED24BE38740016432D /* Application.xcassets */; };
+		74BDC2F124BE387F0016432D /* URL-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC2EF24BE387F0016432D /* URL-180.png */; };
+		74BDC2F224BE387F0016432D /* URL-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BDC2F024BE387F0016432D /* URL-40.png */; };
+		74BDC2F524BE441F0016432D /* UpcomingTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2F424BE441F0016432D /* UpcomingTripsView.swift */; };
+		74BDC2F724BE442B0016432D /* PreviousTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BDC2F624BE442B0016432D /* PreviousTripsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		746EB05524D2A4CF00F7E090 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		746EB05624D2A4CF00F7E090 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		74BDC26F24BE32E30016432D /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		74BDC27824BE32E40016432D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74BDC27B24BE32E40016432D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74BDC27E24BE32E40016432D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74BDC28024BE32E40016432D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74BDC28624BE330B0016432D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74BDC28724BE330B0016432D /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		74BDC28824BE330B0016432D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		74BDC28C24BE33210016432D /* Customizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customizations.swift; sourceTree = "<group>"; };
-		74BDC28F24BE333C0016432D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		74BDC29024BE333C0016432D /* URL-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "URL-180.png"; sourceTree = "<group>"; };
-		74BDC29124BE333D0016432D /* URL-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "URL-40.png"; sourceTree = "<group>"; };
-		74BDC29224BE333D0016432D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		74BDC29824BE33700016432D /* FIRSelectRouteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRSelectRouteView.swift; sourceTree = "<group>"; };
 		74BDC29924BE33700016432D /* FIACoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIACoordinator.swift; sourceTree = "<group>"; };
 		74BDC29A24BE33710016432D /* FIAFlightStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIAFlightStatusView.swift; sourceTree = "<group>"; };
@@ -94,6 +93,15 @@
 		74BDC2C524BE33EE0016432D /* RBSelectInboundFlightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBSelectInboundFlightView.swift; sourceTree = "<group>"; };
 		74BDC2C624BE33EE0016432D /* BookingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingCoordinator.swift; sourceTree = "<group>"; };
 		74BDC2DA24BE344D0016432D /* CoordinatorState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorState.swift; sourceTree = "<group>"; };
+		74BDC2DC24BE35B50016432D /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		74BDC2DE24BE35E70016432D /* TripsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsCoordinator.swift; sourceTree = "<group>"; };
+		74BDC2E124BE370F0016432D /* NextTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTripView.swift; sourceTree = "<group>"; };
+		74BDC2EB24BE38690016432D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		74BDC2ED24BE38740016432D /* Application.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Application.xcassets; sourceTree = "<group>"; };
+		74BDC2EF24BE387F0016432D /* URL-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "URL-180.png"; sourceTree = "<group>"; };
+		74BDC2F024BE387F0016432D /* URL-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "URL-40.png"; sourceTree = "<group>"; };
+		74BDC2F424BE441F0016432D /* UpcomingTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTripsView.swift; sourceTree = "<group>"; };
+		74BDC2F624BE442B0016432D /* PreviousTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousTripsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,16 +134,16 @@
 		74BDC27124BE32E30016432D /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				74BDC28624BE330B0016432D /* AppDelegate.swift */,
-				74BDC28824BE330B0016432D /* SceneDelegate.swift */,
+				746EB05524D2A4CF00F7E090 /* AppDelegate.swift */,
+				746EB05624D2A4CF00F7E090 /* SceneDelegate.swift */,
 				74BDC28724BE330B0016432D /* TabBarView.swift */,
+				74BDC2E024BE36D20016432D /* Trips */,
 				74BDC2DA24BE344D0016432D /* CoordinatorState.swift */,
-				74BDC29724BE33480016432D /* Resources */,
 				74BDC28E24BE332D0016432D /* Utilities */,
 				74BDC2D924BE34220016432D /* Booking */,
 				74BDC2B724BE33C20016432D /* FlightInfoViews */,
-				74BDC27824BE32E40016432D /* Assets.xcassets */,
 				74BDC27D24BE32E40016432D /* LaunchScreen.storyboard */,
+				74BDC2F324BE388A0016432D /* Resources */,
 				74BDC28024BE32E40016432D /* Info.plist */,
 				74BDC27A24BE32E40016432D /* Preview Content */,
 			);
@@ -156,17 +164,6 @@
 				74BDC28C24BE33210016432D /* Customizations.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		74BDC29724BE33480016432D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				74BDC29224BE333D0016432D /* Colors.xcassets */,
-				74BDC28F24BE333C0016432D /* Images.xcassets */,
-				74BDC29124BE333D0016432D /* URL-40.png */,
-				74BDC29024BE333C0016432D /* URL-180.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		74BDC2B424BE337A0016432D /* FlightStatusByAirport */ = {
@@ -260,6 +257,29 @@
 			path = Booking;
 			sourceTree = "<group>";
 		};
+		74BDC2E024BE36D20016432D /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2DE24BE35E70016432D /* TripsCoordinator.swift */,
+				74BDC2DC24BE35B50016432D /* TripsView.swift */,
+				74BDC2E124BE370F0016432D /* NextTripView.swift */,
+				74BDC2F424BE441F0016432D /* UpcomingTripsView.swift */,
+				74BDC2F624BE442B0016432D /* PreviousTripsView.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		74BDC2F324BE388A0016432D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74BDC2F024BE387F0016432D /* URL-40.png */,
+				74BDC2EF24BE387F0016432D /* URL-180.png */,
+				74BDC2ED24BE38740016432D /* Application.xcassets */,
+				74BDC2EB24BE38690016432D /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,12 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				74BDC27F24BE32E40016432D /* LaunchScreen.storyboard in Resources */,
-				74BDC29324BE333D0016432D /* Images.xcassets in Resources */,
-				74BDC29424BE333D0016432D /* URL-180.png in Resources */,
-				74BDC29524BE333D0016432D /* URL-40.png in Resources */,
+				74BDC2EC24BE38690016432D /* Colors.xcassets in Resources */,
 				74BDC27C24BE32E40016432D /* Preview Assets.xcassets in Resources */,
-				74BDC27924BE32E40016432D /* Assets.xcassets in Resources */,
-				74BDC29624BE333D0016432D /* Colors.xcassets in Resources */,
+				74BDC2EE24BE38740016432D /* Application.xcassets in Resources */,
+				74BDC2F224BE387F0016432D /* URL-40.png in Resources */,
+				74BDC2F124BE387F0016432D /* URL-180.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,29 +353,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74BDC2DD24BE35B50016432D /* TripsView.swift in Sources */,
+				74BDC2F524BE441F0016432D /* UpcomingTripsView.swift in Sources */,
 				74BDC2C724BE33EF0016432D /* RBSelectOutboundFlightView.swift in Sources */,
 				74BDC2CA24BE33EF0016432D /* MultiCityView.swift in Sources */,
 				74BDC2AD24BE33710016432D /* FINView.swift in Sources */,
 				74BDC2B124BE33710016432D /* FIASelectAirportView.swift in Sources */,
 				74BDC2D524BE33EF0016432D /* BookingCoordinator.swift in Sources */,
 				74BDC2D224BE33EF0016432D /* RBSelectTravelDatesView.swift in Sources */,
+				74BDC2E224BE370F0016432D /* NextTripView.swift in Sources */,
+				74BDC2F724BE442B0016432D /* PreviousTripsView.swift in Sources */,
 				74BDC2CC24BE33EF0016432D /* RBPassengerDetailsView.swift in Sources */,
 				74BDC2CB24BE33EF0016432D /* BookingView.swift in Sources */,
 				74BDC2C924BE33EF0016432D /* RBView.swift in Sources */,
 				74BDC2AF24BE33710016432D /* FIAView.swift in Sources */,
 				74BDC2CE24BE33EF0016432D /* OWBSelectOriginDestinationView.swift in Sources */,
+				746EB05824D2A4D000F7E090 /* SceneDelegate.swift in Sources */,
 				74BDC2B324BE33710016432D /* FINSelectFlightNumberView.swift in Sources */,
-				74BDC28924BE330B0016432D /* AppDelegate.swift in Sources */,
 				74BDC2D324BE33EF0016432D /* OWBCoordinator.swift in Sources */,
 				74BDC2AA24BE33710016432D /* FIRView.swift in Sources */,
 				74BDC28A24BE330B0016432D /* TabBarView.swift in Sources */,
 				74BDC2D124BE33EF0016432D /* RBCoordinator.swift in Sources */,
 				74BDC2A924BE33710016432D /* FIRFlightStatusView.swift in Sources */,
+				746EB05724D2A4D000F7E090 /* AppDelegate.swift in Sources */,
 				74BDC2B224BE33710016432D /* FIRCoordinator.swift in Sources */,
 				74BDC2AE24BE33710016432D /* FlightInfoView.swift in Sources */,
 				74BDC2AC24BE33710016432D /* FINCoordinator.swift in Sources */,
 				74BDC2A624BE33710016432D /* FIRSelectRouteView.swift in Sources */,
-				74BDC28B24BE330B0016432D /* SceneDelegate.swift in Sources */,
 				74BDC2D424BE33EF0016432D /* RBSelectInboundFlightView.swift in Sources */,
 				74BDC28D24BE33210016432D /* Customizations.swift in Sources */,
 				74BDC2D024BE33EF0016432D /* RBSelectOriginDestination.swift in Sources */,
@@ -364,6 +387,7 @@
 				74BDC2C824BE33EF0016432D /* OWBView.swift in Sources */,
 				74BDC2A824BE33710016432D /* FIAFlightStatusView.swift in Sources */,
 				74BDC2CD24BE33EF0016432D /* OWBSelectTravelDateView.swift in Sources */,
+				74BDC2DF24BE35E70016432D /* TripsCoordinator.swift in Sources */,
 				74BDC2AB24BE33710016432D /* FINFlightStatusView.swift in Sources */,
 				74BDC2B024BE33710016432D /* FlightInfoCoordinator.swift in Sources */,
 				74BDC2CF24BE33EF0016432D /* RBSelectExtraOptionsView.swift in Sources */,
@@ -389,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -450,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

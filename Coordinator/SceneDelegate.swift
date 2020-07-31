@@ -59,17 +59,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
-//        guard userActivity.activityType == NSUser NSUserActivityTypeBrowsingWeb,
-        let urlToOpen = userActivity.webpageURL ?? URL(fileURLWithPath: "klmios://")
- //             let urlToOpen = userActivity.webpageURL //else {
-//            return
-        //}
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+              let urlToOpen = userActivity.webpageURL else {
+            return
+        }
         
         handleURL(scene, urlToOpen)
     }
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        let urlToOpen = URLContexts.first?.url ?? URL(fileURLWithPath: "klmios://")
+        let urlToOpen = URLContexts.first?.url ?? URL(fileURLWithPath: "coordinator://")
         
         self.handleURL(scene, urlToOpen)
     }
@@ -83,7 +82,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if  urlComponents != nil {
             if let urlQueryParameters = urlComponents?.queryItems {
-                if(url.scheme == "klmios") {
+                if(url.scheme == "coordinator") {
                     for parameter in urlQueryParameters {
                         switch parameter.name {
                         case "tab":
@@ -100,7 +99,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }
         }
         
-        var view = TabBarView(selectedTab: .FlighInfo)
+        var view = TabBarView(selectedTab: .Book)
         
         switch tab {
         case "Book": view = TabBarView(selectedTab: .Book)
@@ -115,5 +114,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+        
     }
 }

@@ -17,7 +17,7 @@ struct FlightInfoView: View {
         HStack {
             Button(action: {
                 self.coordinatorState.flow = "ByFlightNumber"
-                self.coordinatorState.page = "FINSelectFlightNumber"
+                self.coordinatorState.page = ""
                 self.coordinatorState.back = ""
             }) {
                 Text("Flight number")
@@ -28,7 +28,7 @@ struct FlightInfoView: View {
             
             Button(action: {
                 self.coordinatorState.flow = "ByRoute"
-                self.coordinatorState.page = "FIRSelectRoute"
+                self.coordinatorState.page = ""
                 self.coordinatorState.back = ""
             }) {
                 Text("Route")
@@ -39,7 +39,7 @@ struct FlightInfoView: View {
             
             Button(action: {
                 self.coordinatorState.flow = "ByAirport"
-                self.coordinatorState.page = "FIASelectAirport"
+                self.coordinatorState.page = ""
                 self.coordinatorState.back = ""
             }) {
                 Text("Airport")

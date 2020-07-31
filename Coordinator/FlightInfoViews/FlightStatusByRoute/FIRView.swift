@@ -30,9 +30,9 @@ struct FIRView: View {
                     self.coordinatorState.page = back(coordinatorState: self.coordinatorState)
                 }) {
                     Image("back")
-                        .foregroundColor(self.coordinatorState.page == "FIRSelectFlightNumber" ? .white : .lightFontColor)
+                        .foregroundColor(self.coordinatorState.page == "FIRSelectRoute" ? .accentColor : .white)
                     Text("Back")
-                        .foregroundColor(self.coordinatorState.page == "FIRSelectFlightNumber" ? .white : .lightFontColor)
+                        .foregroundColor(self.coordinatorState.page == "FIRSelectRoute" ? .accentColor : .white)
             })
         }
     }
@@ -40,8 +40,8 @@ struct FIRView: View {
 
 private func back(coordinatorState: CoordinatorState) -> String {
     switch coordinatorState.page {
-    case "FIRFlightStatus": return "FIRSelectFlightNumber"
-    default: return "FIRSelectFlightNumber"
+    case "FIRFlightStatus": return "FIRSelectRoute"
+    default: return "FIRSelectRoute"
     }
 }
 

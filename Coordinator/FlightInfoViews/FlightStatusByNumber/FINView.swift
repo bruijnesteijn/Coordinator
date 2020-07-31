@@ -30,9 +30,9 @@ struct FINView: View {
                     self.coordinatorState.page = back(coordinatorState: self.coordinatorState)
                 }) {
                     Image("back")
-                        .foregroundColor(self.coordinatorState.page == "FINSelectFlightNumber" ? .white : .lightFontColor)
+                        .foregroundColor(self.coordinatorState.page == "FINSelectFlightNumber" ? .accentColor : .white)
                     Text("Back")
-                        .foregroundColor(self.coordinatorState.page == "FINSelectFlightNumber" ? .white : .lightFontColor)
+                        .foregroundColor(self.coordinatorState.page == "FINSelectFlightNumber" ? .accentColor : .white)
             })
         }
     }
@@ -41,8 +41,8 @@ struct FINView: View {
 
 private func back(coordinatorState: CoordinatorState) -> String {
     switch coordinatorState.page {
-    case "FIFlightStatus": return "FISelectFlightNumber"
-    default: return "FISelectFlightNumber"
+    case "FINFlightStatus": return "FINSelectFlightNumber"
+    default: return "FINSelectFlightNumber"
     }
 }
 

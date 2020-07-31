@@ -1,5 +1,5 @@
 //
-//  BookingView.swift
+//  TripsView.swift
 //  CoordinatorPattern
 //
 //  Created by Bart Bruijnesteijn on 10/06/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct BookingView: View {
+struct TripsView: View {
     @EnvironmentObject var coordinatorState: CoordinatorState
     
     let tab: String
@@ -16,43 +16,43 @@ struct BookingView: View {
     var body: some View {
         HStack {
             Button(action: {
-                self.coordinatorState.flow = "ReturnBooking"
+                self.coordinatorState.flow = "NextTrip"
                 self.coordinatorState.page = ""
                 self.coordinatorState.back = ""
             }) {
-                Text("Return")
+                Text("Next trip")
             }
             .font(.headline)
-            .foregroundColor(tab == "ReturnBooking" ? .darkFontColor : .lightFontColor)
+            .foregroundColor(tab == "NextTrip" ? .darkFontColor : .lightFontColor)
             .padding()
             
             Button(action: {
-                self.coordinatorState.flow = "OneWayBooking"
+                self.coordinatorState.flow = "UpcomingTrips"
                 self.coordinatorState.page = ""
                 self.coordinatorState.back = ""
             }) {
-                Text("One way")
+                Text("Upcoming")
             }
             .font(.headline)
-            .foregroundColor(tab == "OneWayBooking" ? .darkFontColor : .lightFontColor)
+            .foregroundColor(tab == "UpcomingTrips" ? .darkFontColor : .lightFontColor)
             .padding()
             
             Button(action: {
-                self.coordinatorState.flow = "MultiCityBooking"
+                self.coordinatorState.flow = "PreviousTrips"
                 self.coordinatorState.page = ""
                 self.coordinatorState.back = ""
             }) {
-                Text("Multi city")
+                Text("Previous")
             }
             .font(.headline)
-            .foregroundColor(tab == "MultiCityBooking" ? .darkFontColor : .lightFontColor)
+            .foregroundColor(tab == "PreviousTrips" ? .darkFontColor : .lightFontColor)
             .padding()
         }
     }
 }
 
-struct BookingView_Previews: PreviewProvider {
+struct TripsView_Previews: PreviewProvider {
     static var previews: some View {
-        BookingView(tab: "ReturnBooking")
+        TripsView(tab: "NextTrip")
     }
 }

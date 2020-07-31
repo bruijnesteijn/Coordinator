@@ -14,7 +14,7 @@ struct RBSelectOriginDestinationView: View {
     var body: some View {
         VStack {
             Text("Select origin, destination & number of passengers")
-                .frame(width: 300, height: 300)
+                .frame(width: 300, height: 150)
                 .background(Color.rectangleAccentColor)
                 .multilineTextAlignment(.center)
                 .lineSpacing(10)

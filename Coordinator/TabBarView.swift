@@ -17,17 +17,38 @@ struct TabBarView: View {
         TabView(selection: $selectedTab) {
             BookingCoordinator()
                 .tabItem {
-                    Image("search").renderingMode(.template)
+                    Image(systemName: "magnifyingglass").renderingMode(.template)
                     Text("Book")
             }
             .tag(Tab.Book)
             
             FlightInfoCoordinator()
                  .tabItem {
-                    Image("clock").renderingMode(.template)
+                    Image(systemName: "clock").renderingMode(.template)
                     Text("Flight info")
             }
             .tag(Tab.FlighInfo)
+            
+            TripsCoordinator()
+                 .tabItem {
+                    Image(systemName: "airplane").renderingMode(.template)
+                    Text("My Trips")
+            }
+            .tag(Tab.Trips)
+            
+            TripsCoordinator()
+                 .tabItem {
+                    Image(systemName: "rosette").renderingMode(.template)
+                    Text("My Trips")
+            }
+            .tag(Tab.Trips)
+            
+            TripsCoordinator()
+                 .tabItem {
+                    Image(systemName: "message").renderingMode(.template)
+                    Text("My Trips")
+            }
+            .tag(Tab.Trips)
         }.accentColor(Color.tabBarAccentColor)
     }
 }
@@ -36,6 +57,7 @@ extension TabBarView {
     enum Tab: Hashable {
         case Book
         case FlighInfo
+        case Trips
     }
 }
 

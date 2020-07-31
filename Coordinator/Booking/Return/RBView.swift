@@ -30,9 +30,9 @@ struct RBView: View {
                     self.coordinatorState.page = back(coordinatorState: self.coordinatorState)
                 }) {
                     Image("back")
-                        .foregroundColor((self.coordinatorState.page == "RBSelectOriginDestination" || self.coordinatorState.page == "") ? .white : .lightFontColor)
+                        .foregroundColor((self.coordinatorState.page == "RBSelectOriginDestination" || self.coordinatorState.page == "") ? .accentColor : .white)
                     Text("Back")
-                        .foregroundColor((self.coordinatorState.page == "RBSelectOriginDestination" || self.coordinatorState.page == "") ? .white : .lightFontColor)
+                        .foregroundColor((self.coordinatorState.page == "RBSelectOriginDestination" || self.coordinatorState.page == "") ? .accentColor : .white)
             })
         }
     }

@@ -14,7 +14,7 @@ struct FINSelectFlightNumberView: View {
     var body: some View {
         VStack {
             Text("Select flight number")
-                .frame(width: 300, height: 300)
+                .frame(width: 300, height: 150)
                 .background(Color.rectangleAccentColor)
                 .multilineTextAlignment(.center)
                 .lineSpacing(10)

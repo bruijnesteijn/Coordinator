@@ -14,7 +14,7 @@ struct FINFlightStatusView: View {
     var body: some View {
         VStack {
             Text("Flight status information found")
-                .frame(width: 300, height: 300)
+                .frame(width: 300, height: 150)
                 .background(Color.rectangleAccentColor)
 .multilineTextAlignment(.center)
                 .lineSpacing(10)
